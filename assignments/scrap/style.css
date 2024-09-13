@@ -1,0 +1,60 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: radial-gradient(hsl(200, 80%, 70%), hsl(130, 50%, 90%));
+    background-repeat: no-repeat;
+    height: 400vh
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: top; 
+    font-size: 76px;
+}
+
+h1{
+    font-size: 76px;
+
+}
+
+.navTitle{
+    display: flex;
+    justify-content: center;
+    align-items: top; 
+    font-size: 76px;
+  
+}
+
+.listItem{
+    display: flex;
+    justify-content: center;
+    align-items: top; 
+    font-size: 76px;
+  
+}
+.titleText{
+    font-weight: bold;
+    font-size: 76px;
+    
+}
+
+.listItem2{
+    font-weight: bold;
+   
+    justify-content: center;
+    align-items: top; 
+    font-size: 76px;
+}
+
+.button1{
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px; 
+    font-size: 25px;
+}

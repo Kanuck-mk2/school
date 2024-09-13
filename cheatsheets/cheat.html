@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Defines the document type and version of HTML -->
+<html lang="en">
+  <!-- Root element of the document -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design meta tag -->
+    <title>Sample Page</title>
+    <!-- Title of the document -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to an external CSS file -->
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <h1>Welcome to My Website</h1>
+      <!-- Main heading -->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <!-- Navigation link -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        <!-- Subheading for the home section -->
+        <p>This is the home section of the page.</p>
+        <!-- Paragraph of text -->
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>Learn more about us in this section.</p>
+        <img src="about.jpg" alt="About Us" />
+        <!-- Image with alt text -->
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="/submit" method="post">
+          <!-- Form for user input -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <!-- Text input -->
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <!-- Email input -->
+
+          <button type="submit">Submit</button>
+          <!-- Submit button -->
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p>&copy; 2024 My Website</p>
+      <!-- Footer text -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif; /* Sets the default font for the document */
+  line-height: 1.6; /* Increases line height for better readability */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #f4f4f4; /* Sets a light gray background color */
+}
+
+/* Header Styles */
+header {
+  background: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 1rem; /* Adds padding inside the header */
+  text-align: center; /* Centers the text inside the header */
+}
+
+header h1 {
+  margin: 0; /* Removes default margin */
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+}
+
+nav ul li {
+  display: inline; /* Displays list items inline */
+  margin-right: 1rem; /* Adds space between list items */
+}
+
+nav ul li a {
+  color: #fff; /* White text color for links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Underlines link on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem; /* Adds padding inside the main content area */
+}
+
+section {
+  margin-bottom: 2rem; /* Adds space between sections */
+}
+
+section h2 {
+  color: #333; /* Dark text color for headings */
+}
+
+/* Form Styles */
+form {
+  background: #fff; /* White background for the form */
+  padding: 1rem; /* Adds padding inside the form */
+  border-radius: 4px; /* Rounds the corners of the form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+form label {
+  display: block; /* Makes labels block-level elements */
+  margin-bottom: 0.5rem; /* Adds space below labels */
+}
+
+form input[type='text'],
+form input[type='email'] {
+  width: 100%; /* Makes inputs full-width */
+  padding: 0.5rem; /* Adds padding inside inputs */
+  margin-bottom: 1rem; /* Adds space below inputs */
+  border: 1px solid #ddd; /* Light gray border for inputs */
+  border-radius: 4px; /* Rounds the corners of inputs */
+}
+
+form button {
+  background: #333; /* Dark background color for the button */
+  color: #fff; /* White text color for the button */
+  border: none; /* Removes default border */
+  padding: 0.5rem 1rem; /* Adds padding inside the button */
+  border-radius: 4px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+form button:hover {
+  background: #555; /* Slightly lighter background on hover */
+}
+
+/* Footer Styles */
+footer {
+  background: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centers the text inside the footer */
+  padding: 1rem; /* Adds padding inside the footer */
+  position: fixed; /* Fixes the footer to the bottom of the page */
+  width: 100%; /* Makes the footer full-width */
+  bottom: 0; /* Positions the footer at the bottom */
+}
+/* Container Styles */
+.container {
+  max-width: 1200px; /* Sets the maximum width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 2rem; /* Adds horizontal padding */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #007bff; /* Primary blue background */
+  color: white; /* White text color */
+  border: none; /* Removes default border */
+  padding: 0.5rem 1rem; /* Adds padding inside the button */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Adds pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Adds transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Changes button background on hover */
+}
+
+/* Flexbox Layout */
+.flex-container {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Distributes items with space between */
+  align-items: center; /* Aligns items vertically */
+}
+
+.flex-item {
+  flex: 1; /* Each item will take up equal space */
+  margin: 0.5rem; /* Adds space around each flex item */
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid; /* Enables grid layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 1rem; /* Adds space between grid items */
+}
+
+.grid-item {
+  background-color: #f0f0f0; /* Light gray background for grid items */
+  padding: 1rem; /* Adds padding inside each grid item */
+  border: 1px solid #ddd; /* Adds a light border around grid items */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial', sans-serif; /* Sets font family for all heading elements */
+  margin-bottom: 0.5rem; /* Adds space below headings */
+}
+
+p {
+  margin-bottom: 1rem; /* Adds space below paragraphs */
+  line-height: 1.5; /* Sets the line height for better readability */
+}
+/* Linear Gradient Background */
+.gradient-bg {
+  background: linear-gradient(
+    90deg,
+    #ff7e5f,
+    #feb47b
+  ); /* Creates a gradient from left to right */
+}
+
+/* Radial Gradient Background */
+.radial-gradient-bg {
+  background: radial-gradient(
+    circle,
+    #ff7e5f,
+    #feb47b
+  ); /* Creates a circular gradient */
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #ff7e5f,
+    #feb47b
+  ); /* Creates a gradient on text */
+  -webkit-background-clip: text; /* Ensures the gradient only applies to text */
+  color: transparent; /* Hides the text color so the gradient is visible */
+}
+
+/* Basic Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    opacity: 1; /* End fully opaque */
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in; /* Applies the fade-in animation over 2 seconds */
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* Slide in to the original position */
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out; /* Applies the slide-in animation over 1 second */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0); /* No vertical movement */
+  }
+  40% {
+    transform: translateY(-30px); /* Bounce up */
+  }
+  60% {
+    transform: translateY(-15px); /* Smaller bounce */
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite; /* Applies the bounce animation and loops infinitely */
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* Complete full rotation */
+  }
+}
+
+.rotate {
+  animation: rotate 3s linear infinite; /* Rotate continuously with no easing */
+}
