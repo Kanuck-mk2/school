@@ -40,6 +40,14 @@ const pancake = [
   },
 ];
 
-const lesson = (pancake, time) => {};
+const lesson = (pancake, time) => {
+    if( pancake === false){
+return console.log('class is absent')}
+else( pancake === true ){
+    return console.log('class is present')
+
+}
+    };
+
 
 console.log('Hello Class');
