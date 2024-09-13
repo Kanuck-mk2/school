@@ -46,13 +46,20 @@ return console.log('class is absent')}
 else( pancake === true ){
     return console.log('class is present')
 
+    
+
 }
     };
  return lesson();
 
+
  const pete = ( pancake, index) => {
     const hito = Math.floor(`${pancake.grade}` * 3)
 
+    return console.log('hello')
+
  }
+
+ return pete();
 
 console.log('Hello Class');
