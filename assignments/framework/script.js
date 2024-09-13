@@ -48,6 +48,11 @@ else( pancake === true ){
 
 }
     };
+ return lesson();
 
+ const pete = ( pancake, index) => {
+    const hito = Math.floor(`${pancake.grade}` * 3)
+
+ }
 
 console.log('Hello Class');
