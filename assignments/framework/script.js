@@ -1,65 +1,69 @@
 const pancake = [
   {
     id: 1,
-    name: 'string for now',
+    name: 'Pancake 1',
     grade: 1,
-    description: 'string for now',
+    description: 'First pancake',
     attendance: true,
   },
-
   {
-    id: 1,
-    name: 'string for now',
-    grade: 1,
-    description: 'string for now',
+    id: 2,
+    name: 'Pancake 2',
+    grade: 2,
+    description: 'Second pancake',
     attendance: true,
   },
-
   {
-    id: 1,
-    name: 'string for now',
-    grade: 1,
-    description: 'string for now',
+    id: 3,
+    name: 'Pancake 3',
+    grade: 3,
+    description: 'Third pancake',
     attendance: true,
   },
-
   {
-    id: 1,
-    name: 'string for now',
-    grade: 1,
-    description: 'string for now',
+    id: 4,
+    name: 'Pancake 4',
+    grade: 4,
+    description: 'Fourth pancake',
     attendance: true,
   },
-
   {
-    id: 1,
-    name: 'string for now',
-    grade: 1,
-    description: 'string for now',
+    id: 5,
+    name: 'Pancake 5',
+    grade: 5,
+    description: 'Fifth pancake',
     attendance: true,
   },
 ];
 
-const lesson = (pancake, time) => {
-    if( pancake === false){
-return console.log('class is absent')}
-else( pancake === true ){
-    return console.log('class is present')
+// lesson function
+const lesson = (pancake) => {
+  pancake.forEach((item) => {
+    if (item.attendance === false) {
+      console.log(`${item.name} is absent.`);
+    } else {
+      console.log(`${item.name} is present.`);
+    }
+  });
+};
 
-    
+lesson(pancake);
 
-}
-    };
- return lesson();
+// Updated pete function
+const pete = (pancake) => {
+  pancake.forEach((item) => {
+    const hito = Math.floor(item.grade * 3);
 
+    // Check attendance and return a message
+    const result = item.attendance ? 'pass' : 'fail';
 
- const pete = ( pancake, index) => {
-    const hito = Math.floor(`${pancake.grade}` * 3)
+    console.log(
+      `For ${item.name}: Grade * 3 is ${hito}, Attendance: ${result}`,
+    );
+  });
+};
 
-    return console.log('hello')
-
- }
-
- return pete();
+// Call the pete function
+pete(pancake);
 
 console.log('Hello Class');
