@@ -96,8 +96,8 @@ const Carousel = () => {
           <motion.div
             key={card.id}
             className="w-80 h-96 rounded-lg border shadow-lg border-violet-400 bg-slate-400/10 bg-opacity-50 backdrop-filter backdrop-blur-lg flex flex-col items-center p-4 relative"
-            animate={{ rotate: rotateValue, opacity: [0, 1]}} // Apply dynamic rotation
-            transition={{ duration: 0.5 }} // Rotation animation duration
+            animate={{ rotate: rotateValue, opacity: [0, 1] }} // Apply dynamic rotation
+            transition={{ duration: 0.5, type: 'spring' }} // Rotation animation duration
             whileHover={{ scale: 1.2 }}
           >
             <motion.img
@@ -107,15 +107,17 @@ const Carousel = () => {
               initial={{ scale: 2 }}
               animate={{
                 scale: 1,
-                type: 'spring' ,
+                type: 'spring',
                 stiffness: 200,
                 damping: 60,
               }}
-              transition={{duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+              transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.2 }}
               whileHover={{ scale: 1.2 }} // Subtle hover effect on image
               whileTap={{ scale: 0.95 }}
             />
-            <h3 className="text-xl text-gray-200 font-semibold mb-2">{card.title}</h3>
+            <h3 className="text-xl text-gray-200 font-semibold mb-2">
+              {card.title}
+            </h3>
             <p className="text-gray-200 text-center">{card.description}</p>
           </motion.div>
         ))}
