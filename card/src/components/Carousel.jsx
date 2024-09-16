@@ -92,7 +92,7 @@ const Carousel = () => {
         animate={{ x: -currentIndex * 350 }} // Adjust slide distance per card width
         transition={{ type: 'spring', stiffness: 200, damping: 60 }}
       >
-        {cards.map((id, card) => (
+        {cards.map((index, card) => (
           <motion.div
             key={card.id}
             className="w-80 h-96 rounded-lg border shadow-lg border-violet-400 bg-slate-400/10 bg-opacity-50 backdrop-filter backdrop-blur-lg flex flex-col items-center p-4 relative"
