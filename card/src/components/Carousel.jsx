@@ -88,7 +88,7 @@ const Carousel = () => {
       style={{ backgroundImage: `url(${bgD2})` }} // Use backgroundImage here
     >
       <motion.div
-        className="flex  space-x-6 overflow-hidden p-11"
+        className="sm:grid grid-flow-col grid-cols-2 space-x-6 overflow-hidden p-11"
         animate={{ x: -currentIndex * 350 }} // Adjust slide distance per card width
         transition={{ type: 'spring', stiffness: 200, damping: 60 }}
       >
