@@ -1,6 +1,13 @@
-h1, h2 {
+h1,
+h2 {
   font: bold;
 }
 .darkSouls {
-  padding: 4;
+  margin-left: 30px;
+}
+.description {
+  margin-left: 30px;
+}
+.finalFantasy {
+  margin-left: 30px;
 }
