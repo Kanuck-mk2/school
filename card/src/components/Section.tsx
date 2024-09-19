@@ -1,4 +1,9 @@
-import { motionValue, useAnimate, useMotionValue, useTransform } from 'framer-motion';
+import {
+  motionValue,
+  useAnimate,
+  useMotionValue,
+  useTransform,
+} from 'framer-motion';
 import React, { useState } from 'react';
 
 const Section = () => {
@@ -44,6 +49,16 @@ const Section = () => {
             <div>{medi.power}</div>
           </div>
         ))}
+      </div>
+      <div className='border-1 border-blue-600'>
+        <div className='boder-2 border-green-600'>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div></div>
+        </div>
       </div>
     </div>
   );
