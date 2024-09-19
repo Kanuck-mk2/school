@@ -2,12 +2,9 @@ h1,
 h2 {
   font: bold;
 }
-.darkSouls {
-  margin-left: 30px;
-}
-.description {
-  margin-left: 30px;
-}
-.finalFantasy {
+.darkSouls,
+.description,
+.finalFantasy,
+.finalText {
   margin-left: 30px;
 }

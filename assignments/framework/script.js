@@ -67,3 +67,6 @@ const pete = (pancake) => {
 pete(pancake);
 
 console.log('Hello Class');
+
+
+
