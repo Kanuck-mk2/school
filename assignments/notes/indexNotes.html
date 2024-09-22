@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
+<html lang="en">
+  <!-- Root element of the document -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets the viewport for responsive web design -->
+    <title>HTML Cheat Sheet</title>
+    <!-- Title of the document -->
+  </head>
+
+  <body>
+    <!-- Basic Elements -->
+    <h1>Main Heading (h1)</h1>
+    <!-- Defines a top-level heading -->
+
+    <p>This is a paragraph (p). It holds regular text content.</p>
+    <!-- Defines a paragraph of text -->
+
+    <hr />
+    <!-- Horizontal line (hr) used to separate content -->
+
+    <!-- Text Formatting -->
+    <strong>This text is strong (strong)</strong>
+    <!-- Bold text with semantic meaning (strong importance) -->
+
+    <em>This text is emphasized (em)</em>
+    <!-- Italicized text with semantic emphasis -->
+
+    <br />
+    <!-- Line break (br) to start a new line -->
+
+    <!-- Links and Images -->
+    <a href="https://example.com" target="_blank">This is a link (a)</a>
+    <!-- Anchor (a) tag used for hyperlinks -->
+
+    <img src="image.jpg" alt="Description of image" width="200" />
+    <!-- Image (img) tag. `alt` provides alternative text if the image fails to load -->
+
+    <!-- Lists -->
+    <ul>
+      <!-- Unordered list (ul) -->
+      <li>List Item 1</li>
+      <!-- List item (li) -->
+      <li>List Item 2</li>
+    </ul>
+
+    <ol>
+      <!-- Ordered list (ol) -->
+      <li>First item</li>
+      <li>Second item</li>
+    </ol>
+
+    <!-- Tables -->
+    <table border="1">
+      <!-- Table (table) with border -->
+      <thead>
+        <!-- Table header (thead) -->
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table body (tbody) -->
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Forms -->
+    <form action="/submit" method="post">
+      <!-- Form element (form) -->
+      <label for="name">Name:</label>
+      <!-- Label (label) for input fields -->
+      <input type="text" id="name" name="name" required />
+      <!-- Text input field (input) -->
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <!-- Email input (input) -->
+
+      <button type="submit">Submit</button>
+      <!-- Button element (button) for form submission -->
+    </form>
+
+    <!-- Semantic Elements -->
+    <header>
+      <!-- Header (header) for page or section headings -->
+      <h2>Header Section</h2>
+    </header>
+
+    <main>
+      <!-- Main (main) content area -->
+      <section>
+        <!-- Section (section) for a thematically grouped content -->
+        <h3>Section Title</h3>
+        <p>This is a section inside the main area.</p>
+      </section>
+
+      <article>
+        <!-- Article (article) for self-contained, independent content -->
+        <h3>Article Title</h3>
+        <p>This is a standalone article.</p>
+      </article>
+    </main>
+
+    <aside>
+      <!-- Aside (aside) for tangentially related content like a sidebar -->
+      <p>This is some related content in an aside.</p>
+    </aside>
+
+    <footer>
+      <!-- Footer (footer) for the page or section footer -->
+      <p>&copy; 2024 HTML Cheat Sheet</p>
+    </footer>
+
+    <!-- Multimedia -->
+    <audio controls>
+      <!-- Audio (audio) element with playback controls -->
+      <source src="audiofile.mp3" type="audio/mpeg" />
+      <!-- Source file for the audio -->
+      Your browser does not support the audio tag.
+    </audio>
+
+    <video width="320" height="240" controls>
+      <!-- Video (video) element with playback controls -->
+      <source src="videofile.mp4" type="video/mp4" />
+      <!-- Source file for the video -->
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Iframe -->
+    <iframe src="https://example.com" width="300" height="200"></iframe>
+    <!-- Iframe (iframe) to embed another webpage -->
+
+    <!-- Metadata -->
+    <meta name="description" content="HTML Cheat Sheet" />
+    <!-- Meta tag for document description -->
+
+    <!-- Blockquote -->
+    <blockquote cite="https://example.com">
+      <!-- Blockquote (blockquote) for quoted text -->
+      This is a blockquote from another source.
+    </blockquote>
+
+    <!-- Preformatted Text -->
+    <pre>
+      <!-- Preformatted (pre) text preserves whitespace and line breaks -->
+      Line 1
+      Line 2
+    </pre>
+
+    <!-- Code -->
+    <code>
+      <!-- Code (code) element for inline code snippets -->
+      console.log('Hello World');
+    </code>
+
+    <!-- Progress -->
+    <progress value="70" max="100"></progress>
+    <!-- Progress (progress) element to show task completion -->
+
+    <!-- Details -->
+    <details>
+      <!-- Details (details) element for collapsible content -->
+      <summary>Click to see more</summary>
+      <!-- Summary (summary) element to provide a title for the collapsible content -->
+      <p>This is the hidden content.</p>
+    </details>
+
+    <!-- Figure and Figcaption -->
+    <figure>
+      <!-- Figure (figure) for grouping media content with caption -->
+      <img src="image.jpg" alt="An image" />
+      <figcaption>This is a caption for the image.</figcaption>
+      <!-- Figcaption (figcaption) for captions in media -->
+    </figure>
+  </body>
+</html>
