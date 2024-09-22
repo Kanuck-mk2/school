@@ -150,3 +150,162 @@ document.getElementById('decreaseFontSize').addEventListener('click', () => {
   fontSize -= 2;
   document.getElementById('resizableText').style.fontSize = `${fontSize}px`;
 });
+
+// 21. Get Selected Value from a Dropdown
+// Retrieves the value of a selected option from a dropdown list.
+document.getElementById('getSelectedValue').addEventListener('click', () => {
+  const selectedValue = document.getElementById('dropdown').value;
+  console.log('Selected value:', selectedValue);
+});
+
+// 22. Toggle Class on an Element
+// Toggles a specific class on an element each time the button is clicked.
+document.getElementById('toggleClass').addEventListener('click', () => {
+  document.getElementById('toggleClassElement').classList.toggle('highlight');
+});
+
+// 23. Scroll to a Specific Element
+// Scrolls smoothly to a specific element when the button is clicked.
+document.getElementById('scrollToElement').addEventListener('click', () => {
+  document
+    .getElementById('scrollTarget')
+    .scrollIntoView({ behavior: 'smooth' });
+});
+
+// 24. Change Multiple CSS Properties at Once
+// Changes multiple styles of an element (like background color and text color).
+document
+  .getElementById('changeMultipleStyles')
+  .addEventListener('click', () => {
+    const elem = document.getElementById('multiStyleElement');
+    Object.assign(elem.style, {
+      backgroundColor: 'lightgreen',
+      color: 'white',
+      padding: '20px',
+      borderRadius: '10px',
+    });
+  });
+
+// 25. Remove All Child Elements
+// Removes all child elements from a container element.
+document.getElementById('removeChildren').addEventListener('click', () => {
+  const container = document.getElementById('childContainer');
+  while (container.firstChild) {
+    container.removeChild(container.firstChild); // Remove all child nodes
+  }
+});
+
+// 26. Replace Element Content
+// Replaces the content of an element with new content.
+document.getElementById('replaceContent').addEventListener('click', () => {
+  const elem = document.getElementById('replaceTarget');
+  elem.textContent = 'The content has been replaced!';
+});
+
+// 27. Count Characters in Input Field
+// Counts and displays the number of characters in a text input field.
+document.getElementById('inputField').addEventListener('input', () => {
+  const charCount = document.getElementById('inputField').value.length;
+  document.getElementById(
+    'charCounter',
+  ).textContent = `Character count: ${charCount}`;
+});
+
+// 28. Change Button Text on Click
+// Changes the text of a button when it's clicked.
+document
+  .getElementById('changeButtonText')
+  .addEventListener('click', function () {
+    this.textContent = 'Button Clicked!';
+  });
+
+// 29. Create Element and Insert Before Another
+// Creates a new element and inserts it before another existing element.
+document.getElementById('insertBefore').addEventListener('click', () => {
+  const newElement = document.createElement('p'); // Create a new paragraph element
+  newElement.textContent =
+    'This paragraph was inserted before another element!';
+  const targetElement = document.getElementById('targetForInsert');
+  targetElement.parentNode.insertBefore(newElement, targetElement);
+});
+
+// 30. Change List Item Content on Click
+// Changes the content of list items dynamically when each item is clicked.
+document.querySelectorAll('.listItem').forEach((item) => {
+  item.addEventListener('click', () => {
+    item.textContent = 'Item content updated!';
+  });
+});
+
+// 31. Display Image on File Input
+// Displays a selected image file in an img tag when the file input changes.
+document.getElementById('fileInput').addEventListener('change', (event) => {
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    document.getElementById('imageDisplay').src = e.target.result;
+  };
+  reader.readAsDataURL(event.target.files[0]); // Read file as a data URL
+});
+
+// 32. Change Element Position
+// Moves an element to a new position by adjusting its CSS position.
+document.getElementById('moveElement').addEventListener('click', () => {
+  const elem = document.getElementById('movableElement');
+  elem.style.position = 'relative';
+  elem.style.left = '100px'; // Move element 100px to the right
+  elem.style.top = '50px'; // Move element 50px down
+});
+
+// 33. Disable/Enable Form Fields
+// Disables or enables all form fields inside a form.
+document.getElementById('toggleFormFields').addEventListener('click', () => {
+  const formElements = document.getElementById('myForm').elements;
+  for (let i = 0; i < formElements.length; i++) {
+    formElements[i].disabled = !formElements[i].disabled; // Toggle disabled state
+  }
+});
+
+// 34. Animate Element (Basic Animation)
+// Animates an element to move across the screen.
+document.getElementById('animateElement').addEventListener('click', () => {
+  const elem = document.getElementById('animatedBox');
+  let pos = 0;
+  const id = setInterval(frame, 10); // Move every 10ms
+  function frame() {
+    if (pos === 300) {
+      // Stop animation after moving 300px
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.left = `${pos}px`; // Move element horizontally
+    }
+  }
+});
+
+// 35. Fade In/Out Element (Basic Fade Effect)
+// Fades out an element by gradually reducing its opacity.
+document.getElementById('fadeOut').addEventListener('click', () => {
+  const elem = document.getElementById('fadeElement');
+  let opacity = 1;
+  const fadeOutEffect = setInterval(() => {
+    if (opacity <= 0) {
+      clearInterval(fadeOutEffect);
+    } else {
+      opacity -= 0.1;
+      elem.style.opacity = opacity; // Reduce opacity
+    }
+  }, 100); // Fade out over 1 second (100ms steps)
+});
+
+document.getElementById('fadeIn').addEventListener('click', () => {
+  const elem = document.getElementById('fadeElement');
+  let opacity = 0;
+  const fadeInEffect = setInterval(() => {
+    if (opacity >= 1) {
+      clearInterval(fadeInEffect);
+    } else {
+      opacity += 0.1;
+      elem.style.opacity = opacity; // Increase opacity
+    }
+  }, 100); // Fade in over 1 second
+});
