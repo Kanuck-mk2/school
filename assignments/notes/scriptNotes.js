@@ -274,7 +274,7 @@ function throttle(func, limit) {
 const throttledLog = throttle(() => console.log('Throttled Hello'), 1000);
 throttledLog(); // Throttles the function to only run once per second
 
-// 36. Chunk Array into Smaller Arrays
+// 36. Chunk Array into Smaller Arrays 
 function chunkArray(arr, size) {
   const chunked = [];
   for (let i = 0; i < arr.length; i += size) {

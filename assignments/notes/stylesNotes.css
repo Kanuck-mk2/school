@@ -67,7 +67,7 @@ div {
   padding: 20px;
   background-color: lightblue;
 }
-
+ 
 /* ========== GRID ========== */
 .grid-container {
   display: grid; /* Enables grid layout */
