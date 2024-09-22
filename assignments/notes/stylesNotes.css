@@ -67,7 +67,7 @@ div {
   padding: 20px;
   background-color: lightblue;
 }
- 
+
 /* ========== GRID ========== */
 .grid-container {
   display: grid; /* Enables grid layout */
@@ -125,7 +125,11 @@ p {
 
 /* Linear Gradient */
 .gradient {
-  background: linear-gradient(to right, red, yellow); /* Gradient from red to yellow */
+  background: linear-gradient(
+    to right,
+    red,
+    yellow
+  ); /* Gradient from red to yellow */
 }
 
 /* ========== BORDERS & SHADOWS ========== */
