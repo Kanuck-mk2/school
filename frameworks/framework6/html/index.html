@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" >
     <script src="../script/"></script>
   </head>
   <body>
-    <!--Nesting sections and used aside tags for demo for lab-->
+    <!-- Header Section -->
     <header>
-      <h1>Title1</h1>
-      <p>something</p>
+      <h1>Main Title</h1>
+      <p>Welcome to the page.</p>
     </header>
+
+    <!-- Main Content -->
     <main>
+      <!-- Section 1 -->
       <section id="1">
-        <h2>title2</h2>
-        <p>something else</p>
+        <h2>Subheading 1</h2>
+        <p>This is the first section of the page.</p>
+
+        <!-- Nested Section 2 -->
         <section id="2">
-          <h3>title3</h3>
+          <h3>Subheading 2</h3>
           <ul>
-            <li>o</li>
-            <li>h</li>
-            <li>n</li>
-            <li>o</li>
-            <li>i</li>
+            <li>First list item</li>
+            <li>Second list item</li>
+            <li>Third list item</li>
+            <li>Fourth list item</li>
+            <li>Fifth list item</li>
           </ul>
         </section>
+
+        <!-- Nested Section 3 -->
         <section id="3">
-          <h3>title4</h3>
+          <h3>Subheading 3</h3>
           <ol>
-            <li>w</li>
-            <li>h</li>
-            <li>a</li>
-            <li>t</li>
-            <li>i</li>
-            <li>s</li>
+            <li>First ordered item</li>
+            <li>Second ordered item</li>
+            <li>Third ordered item</li>
+            <li>Fourth ordered item</li>
+            <li>Fifth ordered item</li>
+            <li>Sixth ordered item</li>
           </ol>
+
+          <!-- Aside Content -->
           <aside>
-            <p>sometihng</p>
+            <p>This is an aside related to Section 3.</p>
           </aside>
         </section>
-        <div><!--random div element?--></div>
-        <section id="4">
-          <h2>title5</h2>
 
+        <!-- Random div element for demo -->
+        <div>
+          <p>This is a random div element inside Section 1.</p>
+        </div>
+
+        <!-- Section 4 with Definition List -->
+        <section id="4">
+          <h2>Subheading 4</h2>
           <dl>
-            <dt></dt>
-            <dd></dd>
-            <dt></dt>
-            <dd></dd>
+            <dt>Definition Term 1</dt>
+            <dd>Description for Term 1</dd>
+            <dt>Definition Term 2</dt>
+            <dd>Description for Term 2</dd>
           </dl>
         </section>
+
+        <!-- Nested Sections Example -->
         <section>
-          <h2>title</h2>
+          <h2>Subheading 5</h2>
           <section>
-            <h3>ok</h3>
-            <p>hi</p>
+            <h3>Sub-Section 1</h3>
+            <p>Content of the first nested section.</p>
           </section>
           <section>
-            <h3>ok</h3>
-            <p>hi</p>
+            <h3>Sub-Section 2</h3>
+            <p>Content of the second nested section.</p>
           </section>
           <section>
-            <h3>ok</h3>
-            <p>hi</p>
+            <h3>Sub-Section 3</h3>
+            <p>Content of the third nested section.</p>
           </section>
           <section>
-            <h3>ok</h3>
-            <p>hi</p>
+            <h3>Sub-Section 4</h3>
+            <p>Content of the fourth nested section.</p>
           </section>
         </section>
       </section>
+
+      <!-- Aside Content Outside Main Section -->
       <aside>
-        <p>hey</p>
+        <p>This is an aside element outside the main sections.</p>
       </aside>
     </main>
+
+    <!-- Footer Section -->
     <footer>
-      <h2></h2>
-      <p></p>
+      <h2>Footer Title</h2>
+      <p>Footer content goes here.</p>
     </footer>
   </body>
 </html>
