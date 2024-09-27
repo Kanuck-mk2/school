@@ -19,10 +19,10 @@ const Hero: React.FC = () => {
         <p className="text-teal-200">My name is Chad</p>
       </section>
 
-      <section className="flex flex-row border-1 border-sky-300 p-4 ml-4">
+      <section className="flex flex-row items-center justify-center border-1 border-sky-300 p-4 ml-4">
         <div className="space-y-4">
-          <h2>{`${MouseEvent}`}</h2>
-          <p>Hello</p>
+          <h2 className='text-5xl text-sky-300'>{`${MouseEvent}`} This is section 1</h2>
+          <p className='text-3xl text-rose-400'>The hero section</p>
           <div className="w-20 h-20 bg-gray-300"></div>
           <div className="w-20 h-20 bg-gray-300"></div>
         </div>
