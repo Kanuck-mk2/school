@@ -21,6 +21,8 @@ const Hero: React.FC = () => {
 
       <section className="flex flex-row border-1 border-sky-300 p-4 ml-4">
         <div className="space-y-4">
+          <h2>{`${MouseEvent}`}</h2>
+          <p>Hello</p>
           <div className="w-20 h-20 bg-gray-300"></div>
           <div className="w-20 h-20 bg-gray-300"></div>
         </div>
