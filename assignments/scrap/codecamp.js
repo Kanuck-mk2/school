@@ -168,3 +168,29 @@ console.log(repeatedStrings); // Output: ['a', 'bb', 'ccc']
 const stringNumbers = ['10', '20', '30'];
 const numberArray = stringNumbers.map(Number);
 console.log(numberArray); // Output: [10, 20, 30]
+
+// 21. Check for Anagrams
+function areAnagrams(str1, str2) {
+  const normalize = (str) =>
+    str
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, '')
+      .split('')
+      .sort()
+      .join('');
+  return normalize(str1) === normalize(str2);
+}
+console.log(areAnagrams('listen', 'silent')); // Output: true
+
+function letsCheckForAna(strA, strB) {
+  const find = (str) =>
+    str
+      .toUpperCase()
+      .replace(/[^a-z0-9]/g, '')
+      .split('')
+      .sort()
+      .join('');
+  return find(strA) === find(strB);
+}
+console.log(letsCheckForAna('yippee', 'fortnite!'));
+

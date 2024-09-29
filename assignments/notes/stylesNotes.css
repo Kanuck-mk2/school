@@ -8,71 +8,61 @@
 
 /* Applying Google Fonts */
 body {
-  font-family: 'Roboto', sans-serif; /* Sets the default font to Roboto */
-  line-height: 1.6; /* Line height for better readability */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  background-color: #f4f4f4; /* Background color for the body */
-  color: #333; /* Text color */
-}
-
-/* Alternate Font Example */
-h1 {
-  font-family: 'Open Sans', sans-serif; /* Sets the font for h1 to Open Sans */
-  font-weight: 700; /* Bold text for heading */
-  font-size: 36px; /* Font size */
-  color: #222; /* Darker text color */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* ========== BASIC STYLING ========== */
 p {
-  font-size: 16px; /* Font size for paragraph */
-  color: #666; /* Sets a lighter color for paragraph text */
-  line-height: 1.6; /* Better line spacing */
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* ========== SELECTORS ========== */
-/* Class Selector */
 .text-large {
-  font-size: 24px; /* Larger text for this class */
-  font-family: 'Roboto', sans-serif; /* Font applied to this class */
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* ID Selector */
 #main-header {
-  background-color: #333; /* Dark background */
-  color: #fff; /* White text */
-  padding: 10px; /* Adds padding inside the header */
-  text-align: center; /* Centers the text inside the header */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ========== BOX MODEL ========== */
 div {
-  width: 100%; /* Full width */
-  padding: 20px; /* Adds padding inside the div */
-  margin: 10px 0; /* Adds margin (space outside the element) */
-  border: 1px solid #ccc; /* Solid border around the div */
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
 }
 
 /* ========== FLEXBOX ========== */
 .container {
-  display: flex; /* Enables flexbox layout */
-  justify-content: center; /* Centers flex items horizontally */
-  align-items: center; /* Centers flex items vertically */
-  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .flex-item {
-  flex: 1; /* Makes items flexible */
+  flex: 1;
   padding: 20px;
   background-color: lightblue;
 }
 
 /* ========== GRID ========== */
 .grid-container {
-  display: grid; /* Enables grid layout */
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
-  gap: 20px; /* Space between grid items */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .grid-item {
@@ -83,74 +73,68 @@ div {
 
 /* ========== POSITIONING ========== */
 .relative-box {
-  position: relative; /* Relative to its normal position */
-  top: 10px; /* Moves 10px down from its normal position */
-  left: 10px; /* Moves 10px to the right */
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 
 .absolute-box {
-  position: absolute; /* Positioned relative to nearest positioned ancestor */
+  position: absolute;
   top: 50px;
   left: 50px;
 }
 
 .fixed-box {
-  position: fixed; /* Fixed relative to the viewport */
-  bottom: 10px; /* 10px from the bottom of the viewport */
-  right: 10px; /* 10px from the right */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 /* ========== TYPOGRAPHY ========== */
 h1 {
-  font-family: 'Open Sans', sans-serif; /* Font for heading */
-  font-size: 36px; /* Font size */
-  font-weight: 700; /* Bold text */
-  color: #333; /* Text color */
-  text-align: center; /* Centers the heading */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
 }
 
 p {
-  font-size: 16px; /* Base font size */
-  line-height: 1.5; /* Line height for readability */
-  text-align: justify; /* Justifies the paragraph text */
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 /* ========== BACKGROUNDS ========== */
-/* Background Image */
 .bg-image {
-  background-image: url('image.jpg'); /* Background image */
-  background-size: cover; /* Scales the image to cover the entire element */
-  background-position: center; /* Centers the background image */
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-/* Linear Gradient */
 .gradient {
-  background: linear-gradient(
-    to right,
-    red,
-    yellow
-  ); /* Gradient from red to yellow */
+  background: linear-gradient(to right, red, yellow);
 }
 
 /* ========== BORDERS & SHADOWS ========== */
 .box {
-  border: 2px solid #333; /* Solid border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ========== ANIMATIONS ========== */
 @keyframes example-animation {
   from {
-    transform: translateX(0); /* Start position */
+    transform: translateX(0);
   }
   to {
-    transform: translateX(100px); /* End position */
+    transform: translateX(100px);
   }
 }
 
 .animate-box {
-  animation: example-animation 2s ease-in-out infinite; /* Animates the element */
+  animation: example-animation 2s ease-in-out infinite;
 }
 
 /* ========== TRANSITIONS ========== */
@@ -162,53 +146,222 @@ p {
 }
 
 .transition-box:hover {
-  background-color: lightcoral; /* Changes color on hover */
-  transform: scale(1.1); /* Scales the box on hover */
+  background-color: lightcoral;
+  transform: scale(1.1);
 }
 
 /* ========== MEDIA QUERIES ========== */
 @media (max-width: 600px) {
   .container {
-    flex-direction: column; /* Stacks items vertically on small screens */
+    flex-direction: column;
   }
 }
 
 /* ========== COLORS ========== */
 .text-color {
-  color: #3498db; /* Blue text color using HEX code */
+  color: #3498db;
 }
 
 .rgba-color {
-  background-color: rgba(52, 152, 219, 0.7); /* Transparent blue */
+  background-color: rgba(52, 152, 219, 0.7);
 }
 
 /* ========== Z-INDEX ========== */
 .z-index-example {
   position: absolute;
-  z-index: 10; /* Higher z-index brings this element on top */
+  z-index: 10;
 }
 
 /* ========== PSEUDO-CLASSES ========== */
 a:hover {
-  color: green; /* Changes link color on hover */
+  color: green;
 }
 
 input:focus {
-  outline: 2px solid blue; /* Adds blue border when input is focused */
+  outline: 2px solid blue;
 }
 
 button:disabled {
-  background-color: #ccc; /* Grays out the button when disabled */
+  background-color: #ccc;
 }
 
 /* ========== PSEUDO-ELEMENTS ========== */
 h1::before {
-  content: '★'; /* Adds star before the heading */
+  content: '★';
   color: gold;
   padding-right: 10px;
 }
 
 p::after {
-  content: ' - Read more'; /* Adds text after the paragraph */
+  content: ' - Read more';
   color: red;
+}
+
+/* ========== LIST STYLING ========== */
+ul {
+  list-style-type: square; /* Change bullet points to squares */
+}
+
+ol {
+  list-style-type: decimal-leading-zero; /* Add leading zeros to ordered lists */
+}
+
+.list-none {
+  list-style: none; /* Removes default bullets or numbers */
+}
+
+/* ========== CUSTOM CURSORS ========== */
+.custom-cursor {
+  cursor: url('custom-cursor.png'), auto; /* Uses a custom image as the cursor */
+}
+
+/* ========== CLIP PATH ========== */
+.clip-shape {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: lightcoral;
+  width: 200px;
+  height: 200px;
+}
+
+/* ========== OUTLINE ========== */
+.outline-example {
+  outline: 2px dashed red; /* Adds a dashed outline */
+  outline-offset: 5px; /* Space between element and outline */
+}
+
+/* ========== TRANSFORMS ========== */
+.transform-example {
+  transform: rotate(45deg); /* Rotates the element by 45 degrees */
+}
+
+/* ========== COUNTERS ========== */
+.counter-example {
+  counter-reset: section; /* Initialize the counter */
+}
+
+.counter-example h2::before {
+  counter-increment: section;
+  content: 'Section ' counter(section) ': '; /* Adds numbering before headings */
+}
+/* ========== CSS EXTENSION ========== */
+
+/* ========== TRANSFORMS ========== */
+/* Scale */
+.scale-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  transform: scale(1.2); /* Scales the element to 120% of its size */
+}
+
+/* Rotate */
+.rotate-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  transform: rotate(45deg); /* Rotates the element by 45 degrees */
+}
+
+/* Skew */
+.skew-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  transform: skew(20deg, 10deg); /* Skews the element */
+}
+
+/* ========== VARIABLES ========== */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-main: 'Roboto', sans-serif;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: var(--font-main);
+}
+
+h2 {
+  color: var(--secondary-color);
+}
+
+/* ========== ADVANCED BACKGROUNDS ========== */
+/* Radial Gradient */
+.radial-gradient {
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+
+/* Image with Linear Gradient Overlay */
+.bg-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ========== ADVANCED MEDIA QUERIES ========== */
+@media (min-width: 768px) {
+  .container {
+    justify-content: space-between; /* Changes flex layout for larger screens */
+  }
+
+  .text-large {
+    font-size: 32px; /* Increases text size for larger screens */
+  }
+}
+
+/* ========== HOVER EFFECTS ========== */
+.button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ========== LIST STYLING ========== */
+ul.custom-list {
+  list-style-type: square; /* Changes bullet points to squares */
+  padding-left: 20px;
+}
+
+ol.custom-list {
+  list-style-type: upper-roman; /* Changes ordered list to Roman numerals */
+}
+
+/* ========== ADVANCED Z-INDEX EXAMPLES ========== */
+.z-back {
+  z-index: 1; /* Lower z-index, goes behind */
+}
+
+.z-front {
+  z-index: 100; /* Higher z-index, comes to the front */
+}
+
+/* ========== CLIP PATH ========== */
+.clip-path {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  clip-path: polygon(
+    50% 0%,
+    100% 100%,
+    0% 100%
+  ); /* Clips the element into a triangle shape */
+}
+
+/* ========== ADVANCED PSEUDO-ELEMENTS ========== */
+h1::before {
+  content: '★ '; /* Adds star before heading */
+  color: gold;
+}
+
+h1::after {
+  content: ' ★'; /* Adds star after heading */
+  color: gold;
 }
