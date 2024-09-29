@@ -1,0 +1,270 @@
+/* ========== GRID ADVANCED ========== */
+.grid-advanced {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Responsive columns */
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto); /* Adjusts row height dynamically */
+}
+
+.grid-advanced-item {
+  background-color: #ddd;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Grid item spanning multiple columns and rows */
+.grid-advanced-item-span {
+  grid-column: span 2; /* Spans 2 columns */
+  grid-row: span 2; /* Spans 2 rows */
+}
+
+/* ========== CUSTOM CHECKBOX & RADIO BUTTONS ========== */
+.checkbox-custom {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox-custom input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-custom input:checked + .checkmark {
+  background-color: #4caf50;
+}
+
+.checkbox-custom .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-custom .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.checkbox-custom input:checked + .checkmark:after {
+  display: block;
+}
+
+.checkbox-custom .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Custom Radio Button */
+.radio-custom {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.radio-custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-custom input:checked ~ .radiomark {
+  background-color: #2196f3;
+}
+
+.radio-custom .radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.radio-custom .radiomark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.radio-custom input:checked ~ .radiomark:after {
+  display: block;
+}
+
+.radio-custom .radiomark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* ========== CSS GRADIENT TEXT ========== */
+.gradient-text {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
+}
+
+/* ========== ADVANCED TRANSITIONS AND ANIMATIONS ========== */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-element {
+  animation: fade-in 2s ease-in-out;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-up-element {
+  animation: slide-up 1s ease-out;
+}
+
+/* Smooth transitions with cubic-bezier */
+.smooth-transition {
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Bounce effect */
+}
+
+/* ========== CSS FILTERS ========== */
+.filter-example {
+  filter: grayscale(100%); /* Makes the image grayscale */
+}
+
+.filter-hover:hover {
+  filter: brightness(120%) blur(2px); /* Lightens and blurs on hover */
+}
+
+/* ========== CSS SHAPES ========== */
+.circle-shape {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.triangle-shape {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #3498db;
+}
+
+/* ========== BLEND MODES ========== */
+.blend-mode {
+  background: url('image.jpg');
+  mix-blend-mode: multiply;
+}
+
+.text-blend {
+  background: linear-gradient(to right, red, yellow);
+  mix-blend-mode: overlay;
+  font-size: 32px;
+  color: white;
+}
+
+/* ========== GRID ALIGNMENT EXAMPLES ========== */
+.grid-alignment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* Aligns content vertically in each grid item */
+  justify-items: center; /* Aligns content horizontally */
+}
+
+/* ========== ADVANCED FLEXBOX ========== */
+/* Flexbox Alignment */
+.flexbox-alignment {
+  display: flex;
+  justify-content: space-between; /* Spacing between items */
+  align-items: flex-start; /* Aligns items at the start */
+}
+
+.flexbox-item {
+  background-color: #ddd;
+  padding: 20px;
+  flex-grow: 1; /* Ensures items grow equally */
+}
+
+/* ========== TOOLTIP ========== */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ========== FLEXBOX WRAP ========== */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 10px;
+}
+
+.flex-wrap-item {
+  width: 100px;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+  body {
+    color: black;
+    font-size: 12pt;
+  }
+  .no-print {
+    display: none; /* Hides elements not needed in print */
+  }
+}
