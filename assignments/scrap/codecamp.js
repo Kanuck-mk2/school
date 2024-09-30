@@ -36,10 +36,9 @@ console.log(userNames); // Output: ['Alice', 'Bob', 'Charlie']
 const mates = [
   { name: 'Kayden', age: 19 },
   { name: 'Voann', age: 19 },
-  { name: 'Matt', age: 20 },
+  { name: 'Matt', age: 23 },
   { name: 'Rodney', age: 19 },
-  { name: 'Kevin', age: 20 },
-  { name: 'Matt', age: 20 },
+  { name: 'Kevin', age: 23 },
   { name: 'Ahmed', age: 18 },
 ];
 const matesNames = mates.map((mates) => mates.age);
@@ -193,4 +192,3 @@ function letsCheckForAna(strA, strB) {
   return find(strA) === find(strB);
 }
 console.log(letsCheckForAna('yippee', 'fortnite!'));
-
