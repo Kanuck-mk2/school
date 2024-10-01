@@ -119,6 +119,15 @@ const nestedArr = [
 const flattened = nestedArr.map((arr) => arr.map((num) => num * 2));
 console.log(flattened); // Output: [[2, 4], [6, 8], [10, 12]]
 
+const range = [
+  [4, 7],
+  [8, 2],
+  [36, 90],
+  [123, 746],
+];
+const double = range.map((arr) => arr.map((num) => num * 4));
+console.log(double);
+
 // 13. Conditional Mapping (Double numbers greater than 10)
 const numbersForCondition = [5, 10, 15, 20];
 const modifiedNumbers = numbersForCondition.map((num) =>
