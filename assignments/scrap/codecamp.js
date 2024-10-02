@@ -190,6 +190,18 @@ function areAnagrams(str1, str2) {
 }
 console.log(areAnagrams('listen', 'silent')); // Output: true
 
+function anagramCheck(strA, strB) {
+  const check = (str) =>
+    str
+      .toLowerCase()
+      .replace(/[^a-z-0-9]/g, '')
+      .split('')
+      .sort()
+      .join('');
+  return check(strA) === check(strB);
+}
+console.log(anagramCheck('chad', 'kayden'));
+
 function letsCheckForAna(strA, strB) {
   const find = (str) =>
     str
