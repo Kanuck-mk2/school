@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata and basic information about the document -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A modern hero section example with good HTML structure">
+        <!-- Title of the page (shown in browser tab) -->
+        <title>Hero Page Example</title>
+        <!-- Linking external CSS for styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Google Fonts for typography -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header section: contains the site logo and navigation links -->
+        <header>
+            <!-- Site branding: logo or site title -->
+            <div class="logo">
+                <a href="index.html" aria-label="Home">
+                    <img src="img/logo.png" alt="Site Logo">
+                </a>
+            </div>
+            <!-- Navigation Menu (inside <nav> for accessibility) -->
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main Content: Hero Section -->
+        <main>
+            <!-- Hero Section (a visually impactful introductory area) -->
+            <section class="hero">
+                <!-- Hero Text with a call-to-action button -->
+                <div class="hero-content">
+                    <h1>Welcome to Our Website</h1>
+                    <p>We offer amazing solutions to bring your ideas to life. Let’s create something incredible together!</p>
+                    <a href="#services" class="cta-button">Explore Our Services</a>
+                </div>
+                <!-- Decorative Hero Image -->
+                <figure class="hero-image">
+                    <img src="img/hero-image.jpg" alt="A beautiful background representing creativity">
+                    <figcaption>Creating stunning designs for your business</figcaption>
+                </figure>
+            </section>
+            <!-- Introduction Section -->
+            <section id="about">
+                <h2>About Us</h2>
+                <p>
+                    Our team of experts combines creativity and technology to bring you the best digital solutions. We believe in making impactful designs that drive success.
+                </p>
+            </section>
+            <!-- Services Section (reusable cards for listing services) -->
+            <section id="services" class="services">
+                <h2>Our Services</h2>
+                <div class="service-cards">
+                    <article class="service-card">
+                        <h3>Web Design</h3>
+                        <p>We build responsive, user-friendly websites that captivate your audience.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>SEO Optimization</h3>
+                        <p>Boost your online presence and get discovered by more customers through effective SEO strategies.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Branding</h3>
+                        <p>Create a strong, consistent brand identity that resonates with your target audience.</p>
+                    </article>
+                </div>
+            </section>
+            <!-- Contact Form (using forms to capture user input) -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="submit-form.php" method="POST" aria-label="Contact Form">
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+        <!-- Footer Section (contact information, social links) -->
+        <footer>
+            <!-- Footer Navigation -->
+            <nav aria-label="Footer Navigation">
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+                    <img src="img/facebook-icon.png" alt="Facebook">
+                </a>
+                <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Twitter"
+                >
+                    <img src="img/twitter-icon.png" alt="Twitter">
+                </a>
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                >
+                    <img src="img/linkedin-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+            <!-- Copyright Information -->
+            <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        </footer>
+        <!-- Optional JavaScript (external script file) -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
