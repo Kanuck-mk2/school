@@ -172,6 +172,12 @@ const repeatedStrings = stringsToRepeat.map((str, index) =>
 );
 console.log(repeatedStrings); // Output: ['a', 'bb', 'ccc']
 
+const repeatStringsToMe = ['Kevin', 'Rodney', 'Kayden', 'Voann'];
+const stringyYippeRepeat = repeatStringsToMe.map((str, index) =>
+  str.repeat(index + 1),
+);
+console.log(stringyYippeRepeat);
+
 // 20. Convert Array of Strings to Numbers
 const stringNumbers = ['10', '20', '30'];
 const numberArray = stringNumbers.map(Number);
