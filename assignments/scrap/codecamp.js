@@ -196,11 +196,11 @@ function areAnagrams(str1, str2) {
 }
 console.log(areAnagrams('listen', 'silent')); // Output: true
 
-function anagramCheck(strA, strC) {
+function anagramCheck(strA, strB) {
   const check = (str) =>
     str
       .toLowerCase()
-      .replace(/[^a-z-0-9]/g, '');;;
+      .replace(/[^a-z-0-9]/g, '')
       .split('')
       .sort()
       .join('');
