@@ -107,9 +107,12 @@ p {
 
 /* ========== BACKGROUNDS ========== */
 .bg-image {
-  background-image: url('image.jpg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('image.jpg'); /* Sets an image as the background */
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-position: center; /* Positions the background image in the center */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Fixes the background in place, so it doesn't scroll with content */
+  background-color: #f4f4f4; /* A fallback background color if the image doesn't load */
 }
 
 .gradient {
