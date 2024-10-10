@@ -17,6 +17,8 @@ function isPalindrome(str) {
   return str === str.split('').reverse().join('');
 }
 console.log(isPalindrome('racecar')); // Output: true
+console.log(isPalindrome('fart')); // Output: false
+console.log(isPalindrome('poop')); // Output: true
 
 // 4. Factorial
 function factorial(n) {
