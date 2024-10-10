@@ -1,0 +1,7 @@
+body{
+    background-image: linear-gradient(hsl(275, 40%, 60%), hsl(14, 87%, 59%));
+}
+.navimage{
+    border: 5px solid hsl(186, 89%, 62%);
+    border-radius: 50px;
+}
