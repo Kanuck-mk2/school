@@ -5,15 +5,22 @@
 
 CREATE TABLE Students (
     student_id INT PRIMARY KEY CLUSTERED,
-    student_name VARCHAR(50) NOT NULL,
+    StudentFirstName VARCHAR(50) NOT NULL,
  class_id INT,
  FOREIGN KEY (class_id) REFERENCES Classroom(class_id)
 
 );
 
-INSERT INTO Classroom (class_name) VALUES ('Dana Class'); -- adding value or a 'class' to an attribute  
+CREATE TABLE Teachers (
+    teacher_id INT IDENTITY(1,1) PRIMARY KEY CLUSTERED,
+    teacher_name VARCHAR(50) NOT NULL,
+)
 
-INSERT INTO Students (student_name, class_id) VALUES   -- adding students to Students table 
+INSERT INTO Classroom (class_name) VALUES ('Dana Class'); -- adding value or a 'class' to an attribute
+
+INSERT INTO Teachers (teacher_name) VALUES ('Dana');
+
+INSERT INTO Students (StudentFirstName, class_id) VALUES   -- adding students to Students table 
 ('Kayden', 1),
 ('Voann', 1),
 ('Rodney', 1),
@@ -38,3 +45,16 @@ SET fav_food = CASE
     WHEN student_name = 'Zac' THEN 'Salad'
     ELSE fav_food
 END;
+
+SELECT 
+
+
+
+
+
+
+
+
+
+
+
