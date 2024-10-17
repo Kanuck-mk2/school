@@ -3,12 +3,12 @@ const Hero: React.FC = () => {
     <div className="flex  flex-row items-center justify-center h-screen min-w-max absolute top-0 border-1 border-green-600">
       <section className=" flex flex-row border-1 border-red-600 p-4">
         <h1 className="text-5xl text-blue-700">Hello World</h1>
-        <p className="text-teal-200">My name is Chad</p>
+        <p className="text-teal-200">This is my Solar system website</p>
 
         <section className="flex flex-row items-center justify-center border-1 border-sky-300 p-4 ml-4">
           <div className="space-y-4">
             <h2 className="text-5xl text-sky-300">
-              {`${MouseEvent}`} This is section 1
+             This is section 1
             </h2>
             <p className="text-3xl text-rose-400">The hero section</p>
             <div className="w-20 h-20 bg-gray-300">
