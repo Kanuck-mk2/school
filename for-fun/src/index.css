@@ -11,3 +11,9 @@
 scroll-behavior: smooth;
 }
 
+.bg-mission {
+    background-image: url('../assets/voyager2-interstellar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

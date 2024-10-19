@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(0);
+  const [nav, setNav] = useState(false);
 
   const handleClick = () => {
     setNav(!nav);
@@ -29,9 +29,19 @@ const Navbar = () => {
           }`}
         ></div>
       </div>
-    {nav && (
-          <div className="fixed w-full h-screen sm:hidden flex flex-col justify-center items-center z-[999]">
-    )}
+      {nav && (
+        <div className="fixed w-full h-screen sm:hidden flex flex-col justify-center items-center z-[999]">
+          <a href="#home" className="text-3xl py-4" onClick={handleClick}>
+            Home
+          </a>
+          <a href="#about" className="text-3xl py-4" onClick={handleClick}>
+            Home
+          </a>
+          <a href="#mission" className="text-3xl py-4" onClick={handleClick}>
+            Home
+          </a>
+        </div>
+      )}
     </div>
   );
 };

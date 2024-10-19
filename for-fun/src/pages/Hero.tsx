@@ -4,7 +4,7 @@ import voyagerImage from '../assets/voyager-2.jpg';
 
 const Hero: React.FC = () => {
   return (
-    <div className="w-full h-screen relative">
+    <div id='home' className="w-full h-screen relative ">
       <img
         className="w-full h-screen object-cover object-center"
         src={voyagerImage}
