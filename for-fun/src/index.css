@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 @tailwind base;
@@ -12,7 +10,7 @@ scroll-behavior: smooth;
 }
 
 .bg-mission {
-    background-image: url('../assets/voyager2-interstellar.jpg');
+    background-image: url('/assets/voyager2-interstellar3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
