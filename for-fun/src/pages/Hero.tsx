@@ -1,4 +1,4 @@
-import jupiterImage from '../assets/jupiter.jpg';
+import voyagerImage from '../assets/voyager-2.jpg';
 
 
 
@@ -7,11 +7,11 @@ const Hero: React.FC = () => {
     <div className="w-full h-screen relative">
       <img
         className="w-full h-screen object-cover object-center"
-        src={jupiterImage}
-        alt="Neptune"
+        src={voyagerImage}
+        alt="Voyager"
       />
       <div className="w-full h-screen absolute top-0 left-0 flex justify-center items-center">
-        <h1 className='flex top-0 text-5xl text-sky-400'>Hello World</h1>
+        <h1 className='flex top-0 text-5xl text-sky-400 font-orbitron text-glow'>Voyager 2</h1>
       </div>
     </div>
   );
