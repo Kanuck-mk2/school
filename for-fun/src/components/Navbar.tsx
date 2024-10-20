@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className=" fixed top-0 left-4 md:hidden p-4  text-white z-[999] cursor-pointer"
+        className=" fixed top-0 left-4  p-4 sm:hidden text-white z-[999] cursor-pointer"
         onClick={handleClick}
       >
         <div
@@ -25,7 +25,7 @@ const Navbar = () => {
         ></div>
         <div
           className={`w-[35px] h-[5px] bg-white my-[6px] transition-transform duration-400 ${
-            nav ? 'opacity-0' : ''
+            nav ? 'opacity-0 duration-200 ease-in-out' : ''
           }`}
         ></div>
       </div>
