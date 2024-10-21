@@ -1,0 +1,104 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+  line-height: 1.25;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: white;
+  color: #2233aa;
+  font-size: 100%
+}
+
+h1 {
+  padding: 30px;
+  font-size: 40px;
+  margin: 10px;
+  background-color: #aaaaaa;
+  border-bottom: 10px double black;
+  width: 620px;
+
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 20px;
+  margin: 10px;
+}
+
+h1, h2 {
+ text-align: center;
+}
+
+section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #aaaaaa;
+  border: 3px solid rgb(00, 99, 00);
+  width: 454px;
+}
+
+section p {
+
+font-size: 16px;
+padding: 15px;
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+
+}
+
+footer h2 {
+  text-align: left;
+  font-size: 30px;
+  text-decoration: none;
+  border-top: 10px dashed rgb(00, 99, 00);
+}
+
+ul li {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: italic;
+margin: 14px
+}
+
+nav ul li {
+  font-size: 10px;
+  color: darkgreen;
+  margin: 10px;
+  font-weight: bold;
+  border-left: 5px solid red;
+}
+
+main li {
+ list-style-type: circle;
+}
+
+a:hover{
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.priority {
+  font-weight: bolder;
+  color: red;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.home {
+  color: darkmagenta;
+}
+
+.school  {
+  color: darkcyan;
+}
+
+.school ul {
+  border: 1px solid black;
+  margin: 5px;
+}
